@@ -12,5 +12,10 @@
             "dest": "/"
         }
     ],
+    "functions": {
+        "./index.js": {
+            "includeFiles": "templates/**"
+        }
+    },
     "public": true
 }

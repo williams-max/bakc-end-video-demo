@@ -2,10 +2,7 @@ const express = require('express');
 const server = express();
 const bodyParser = require("body-parser");
 const cors = require('cors');
-//const { translate } = require('free-translate');
-//const translate = require('translate-google')
 
-//var texto = " ";
 
 const PORT = process.env.PORT || 4000;
 
@@ -20,7 +17,7 @@ const showRoutes = require("./routes/index.js");
 
 server.get('/', async (req, res) => {
 
-    res.send("funciona");/**/
+    res.send("funciona");
 });
 server.use("/api", showRoutes(server));
 
