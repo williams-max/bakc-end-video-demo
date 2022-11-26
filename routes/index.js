@@ -14,7 +14,7 @@ function routes(app) {
         let rawdata = fs.readFileSync('data/contView.json');
         let contview = JSON.parse(rawdata);
       
-        res.send(contview);
+        res.send(contview);/**/
 
     });
 
