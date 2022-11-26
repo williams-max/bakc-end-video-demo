@@ -1,13 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const fs = require('fs');
-//const { translate } = require('free-translate');
-const translate = require('translate-google')
+
 'use strict';
-
-
-
-
 
 
 var texto = " ";
@@ -58,11 +53,6 @@ function routes(app) {
     });
 
 
-
-
-    router.get("/movies/:id", (req, res) => {
-        return app.render(req, res, "/movies", { id: req.params.id });
-    });
 
     return router;
 };
