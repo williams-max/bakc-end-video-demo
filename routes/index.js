@@ -2,10 +2,6 @@ const express = require("express");
 const router = express.Router();
 const fs = require('fs');
 
-'use strict';
-
-
-var texto = " ";
 
 
 function routes(app) {
@@ -17,7 +13,7 @@ function routes(app) {
     router.get('/get-cont-view', async (req, res) => {
         let rawdata = fs.readFileSync('data/contView.json');
         let contview = JSON.parse(rawdata);
-        //console.log(student);
+      
         res.send(contview);
 
     });
@@ -36,7 +32,7 @@ function routes(app) {
     router.get('/get-time-view', async (req, res) => {
         let rawdata = fs.readFileSync('data/timeView.json');
         let conttime = JSON.parse(rawdata);
-        //console.log(student);
+       
         res.send(conttime);
 
     });
