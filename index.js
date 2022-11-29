@@ -21,7 +21,11 @@ server.get('/', async (req, res) => {
 });
 server.use("/api", showRoutes(server));
 
-
+//static
+//server.use(express.static(path.join()));
+//server.use(express.static('public'));
+//server.use('/static', express.static('public'));
+server.use(express.static(__dirname + '/public'));
 
 function handleErrors(err, req, res, next) {
     console.log(err);
