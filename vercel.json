@@ -12,7 +12,7 @@
             "dest": "/"
         },
         {
-            "src": "/data/(.*)",
+            "src": "/data/timeView.json",
             "headers": {
                 "Cache-Control": "public, max-age=31556952, immutable"
             },
