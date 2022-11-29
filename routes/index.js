@@ -30,7 +30,7 @@ function routes(app) {
     });
 
     router.get('/get-time-view', async (req, res) => {
-        let rawdata = fs.readFileSync('data/timeView.json');
+        let rawdata = fs.readFileSync('timeView.json');
         let conttime = JSON.parse(rawdata);
        
         res.send(conttime);
